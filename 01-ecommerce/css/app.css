@@ -76,6 +76,7 @@ img {
 
 .btn:hover {
     background-color: var(--secondary-green);
+    cursor: pointer;
 }
 
 /* Header y navegación */
@@ -313,4 +314,65 @@ img {
 
 .entrada-meta span {
     color: var(--main-color);
+}
+
+/* Entrada */
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/* Galeria */
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
+/* Contacto */
+.fomulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: var(--main-color);
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo textarea, .campo input:not([type="radio"]), .campo select {
+    flex: 1;
+    border: 1px solid var(--main-grey);
+    padding: 1rem;
 }
