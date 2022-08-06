@@ -28,15 +28,33 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
 }
 
 a {
@@ -94,29 +112,57 @@ img {
 }
 
 .nav-principal {
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 .hero {
     background-image: url(../img/principal.jpg);
-    height: 55rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    height: 25rem;
 }
 
-.listado-categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}
+/* Categorias */
+@media  (min-width:  768px){
+    .listado-categorias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
 
 .categorias {
-    padding-top: 5rem;
+    padding: 5rem 0;
+}
+.categoria{
+    margin-bottom: 2rem;
 }
 
+@media  (min-width: 768px ){
+    .categoria{
+        margin-bottom: 0;
+    }
+}
+
+.categoria img{
+    width: 100%;
+}
 
 .categoria a {
     display: block;
@@ -134,22 +180,45 @@ img {
 /** Bloque Nosotros */
 
 .sobre-nosotros {
-    background-image: linear-gradient(to right, transparent 50%, var(--main-color) 50%, var(--main-color) 100%), url(../img/nosotros.jpg);
+    background-image: linear-gradient(to bottom, transparent 50%, var(--main-color) 50%, var(--main-color) 100%), url(../img/nosotros.jpg);
     background-repeat: no-repeat;
-    background-size: 100%, 120rem;
-    background-position: left center;
-    padding: 10rem 0;
+    background-size: 100%, 70rem;
+    background-position: center, top left;
+
+}
+
+@media  (min-width:  768px){
+    .sobre-nosotros {
+        background-image: linear-gradient(to right, transparent 50%, var(--main-color) 50%, var(--main-color) 100%), url(../img/nosotros.jpg);
+        padding: 10rem 0;
+        background-size: 100%, 160rem;
+        background-position: left center;
+    }
 }
 
 .sobre-nosotros-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8rem;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media  (min-width:  768px){
+    .sobre-nosotros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 8rem;
+    }
 }
 
 .texto-nosotros {
     color: white;
-    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 5rem;
+}
+
+@media  (min-width:  768px){
+    .texto-nosotros {
+        grid-column: 2 / 3;
+    }
 }
 
 /* Nuestros productos*/
