@@ -2,35 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TechPro audifonos</title>
+  <title>TechPro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap"
         rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 <header class="header">
-  <div class="contenedor contenido-header">
-    <div class="imagen-header">
+  <div class="container header-container">
+    <div class="header-image">
       <picture>
-        <source sizes="1920w" srcset="img/header.avif" type="image/avif">
-        <source sizes="1920w" srcset="img/header.webp" type="image/webp">
-        <source sizes="1920w" srcset="img/header.png" type="image/png">
-        <img src="img/header.png" alt="imagen header" loading="lazy" height="1000" width="600">
+        <source
+            sizes="1920w"
+            srcset="img/header.avif 1920w"
+            type="image/avif"
+        >
+        <source
+            sizes="1920w"
+            srcset="img/header.webp 1920w"
+            type="image/webp"
+        >
+        <source
+            sizes="1920w"
+            srcset="img/header.png 1920w"
+            type="image/jpeg"
+        >
+        <img loading="lazy" decoding="async" src="img/header.png" alt="image header" width="734" height="490"/>
       </picture>
     </div>
-    <div class="text-header">
-      <p class="taglin-producto">Sonido profesional</p>
-      <h1 class="nombre-producto">TechPro</h1>
-      <p class="descripcion-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam assumenda
-                                      debitis eos eum quis quos reiciendis sed veniam voluptas! Dolor molestiae mollitia
-                                      natus nemo omnis. Consectetur culpa cupiditate minima.</p>
-      <p class="precio-producto">Desde <span>$299</span></p>
+    <div class="header-text">
+      <p class="tagline-product">
+        Sonido Profesional
+      </p>
+      <h1 class="product-name green-gradient">TechPro</h1>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit
+                                     amet.</p>
+      <p class="product-price">Desde <span>$299</span></p>
     </div>
   </div>
 </header>
+
+<section class="container">
+  <div class="icons">
+    <div class="icon">
+      <img src="img/icono-sonido.svg" alt="imagen icono"/>
+      <h3>Gran Sonido</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis dicta ipsum iusto modi omnis reiciendis
+         sequi sunt suscipit voluptatem. Cum cupiditate dolorem, esse fugit id ipsam nisi nobis odio.</p>
+    </div>
+    <div class="icon">
+      <img src="img/icono-garantia.svg" alt="imagen icono"/>
+      <h3>Garantia de por vida</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis dicta ipsum iusto modi omnis reiciendis
+         sequi sunt suscipit voluptatem. Cum cupiditate dolorem, esse fugit id ipsam nisi nobis odio.</p>
+    </div>
+    <div class="icon">
+      <img src="img/icono-bateria.svg" alt="imagen icono"/>
+      <h3>+20 horas de bateria</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis dicta ipsum iusto modi omnis reiciendis
+         sequi sunt suscipit voluptatem. Cum cupiditate dolorem, esse fugit id ipsam nisi nobis odio.</p>
+    </div>
+  </div>
+</section>
+<section class="about-tech">
+  <div class="container about-tech-grid">
+    <div class="text-about-tech">
+      <h2>
+        Sobre los <span>Tech Pro</span>
+      </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi blanditiis consequuntur dolor
+         ducimus, eaque earum explicabo iusto nisi obcaecati, officiis porro quam quibusdam quisquam reiciendis
+         voluptatem voluptatibus. Accusamus, facere.</p>
+    </div>
+  </div>
+</section>
 </body>
 </html>
