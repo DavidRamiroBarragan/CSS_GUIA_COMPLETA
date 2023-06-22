@@ -1,0 +1,363 @@
+:root {
+    --white: #FFF;
+    --black: #111;
+    --grey: #343A40;
+
+    --primary-font: 'Raleway', sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0 4rem 0;
+    font-weight: 900;
+    font-family: var(--primary-font);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 5.8rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    color: var(--grey);
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    padding: 1rem 2rem;
+    transition: background-color .3s ease;
+}
+
+.btn:hover {
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.header {
+    min-height: 60rem;
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 2rem 0;
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.site-name {
+    font-weight: 300;
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+@media (min-width: 768px) {
+    .site-name {
+        font-size: 5.6rem;
+    }
+}
+
+.site-name span {
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        align-items: flex-end;
+    }
+}
+
+.phone {
+    display: flex;
+    color: var(--white);
+}
+
+.phone::before {
+    content: '';
+    background-image: url('../img/telefono.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.header .link, .footer .link {
+    padding: .5rem;
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        flex-direction: row;
+    }
+}
+
+.header-nav .link {
+    padding: 1rem 2rem;
+    transition: background-color .3s ease;
+    width: 100%;
+}
+
+.header-nav .link:hover {
+    background-color: rgba(255, 255, 255, .3);
+    color: var(--black);
+}
+
+.slogan {
+    text-align: center;
+}
+
+
+
+.slogan h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.slogan p {
+    line-height: 1;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .slogan {
+        text-align: right;
+    }
+
+    .slogan h1 {
+        font-size: 5rem;
+    }
+}
+
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url('../img/nosotros.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+
+
+.nosotros-content{
+    background-color: rgba(255, 255, 255);
+    padding: 5rem;
+}
+
+.nosotros-content h2 {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    .nosotros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nosotros-content {
+        grid-column: 2 / 4;
+    }
+}
+
+.model {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+}
+
+.model:last-of-type {
+    margin-bottom: 0;
+}
+
+.model-content {
+    background-color: rgba(255, 255, 255);
+    padding: 5rem;
+}
+
+.basic{
+    background-image: url('../img/modelo_basico.jpg');
+}
+
+.premier{
+    background-image: url('../img/modelo_premier.jpg');
+}
+
+.elite{
+    background-image: url('../img/modelo_elite.jpg');
+}
+
+@media (min-width: 992px) {
+    .model {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .basic{
+        background-position: bottom right;
+    }
+    .basic .model-content {
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .premier{
+        background-position: top left;
+    }
+
+    .premier .model-content {
+        grid-column: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .elite{
+        background-position: top left;
+    }
+
+    .elite .model-content {
+        grid-column: 2 / 3;
+        padding: 2rem  2rem 2rem 0;
+    }
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.galeria img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.galeria .imagen:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.galeria .imagen:nth-child(6){
+    grid-row: 2 / 4;
+}
+
+.galeria .imagen:nth-child(3){
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+}
+
+@media (min-width: 768px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .galeria .imagen:nth-child(2){
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+
+    .galeria .imagen:nth-child(6){
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .galeria .imagen:nth-child(3){
+        grid-column: 2 /3;
+        grid-row: 1 / 2;
+    }
+}
+
+.footer {
+    height: 50rem;
+    background-image: url('../img/footer_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white);
+}
+
+.copy {
+    background-color: var(--black);
+    padding: 1rem;
+    margin: 5rem 0 0 0;
+}
