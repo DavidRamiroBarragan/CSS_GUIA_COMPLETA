@@ -1,0 +1,64 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+@use 'sass:math';
+
+.header--barra {
+  display: flex;
+  flex-direction: column;
+
+  @include m.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header--logo {
+    width: 50%;
+    margin: 0 auto;
+
+    @include m.tablet {
+      width: 20rem;
+      margin: 0;
+    }
+  }
+}
+
+.header--nav__principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+
+  @include m.tablet {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  a {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: v.$white;
+    margin-bottom: 1rem;
+
+    &:hover{
+      color: v.$secondary;
+    }
+
+    @include m.tablet {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    &.activo {
+      color: v.$secondary;
+    }
+  }
+
+
+
+}
+
+
