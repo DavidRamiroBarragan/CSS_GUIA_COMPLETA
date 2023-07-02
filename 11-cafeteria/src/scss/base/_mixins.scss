@@ -18,8 +18,8 @@
   }
 }
 
-@mixin grid($columns, $separation){
+@mixin grid($columns, $separacion){
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
-  gap: $separation;
+  gap: $separacion;
 }
