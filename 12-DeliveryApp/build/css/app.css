@@ -815,7 +815,7 @@ h3 {
 .footer {
   background-color: #455a64;
   color: #FFFFFF;
-  padding: 2rem;
+  padding: 2rem 0 0 0;
 }
 @media (min-width: 768px) {
   .footer__grid {
