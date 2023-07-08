@@ -3,7 +3,7 @@
 
 .testimonial {
   background-color: v.$secundario;
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
   color: v.$blanco;
@@ -24,6 +24,7 @@
 
     &:nth-child(4) {
       grid-column: 1 / 3;
+      margin: 0;
     }
 
     &:nth-child(5) {
